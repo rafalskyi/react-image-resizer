@@ -3,6 +3,10 @@
   "description": "react image resizer",
   "version": "1.3.0",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sottar/react-image-resizer.git"
+  },
   "author": "sota ohara <ohrst.18@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -36,7 +40,7 @@
     "babel-register": "6.26.0",
     "chai": "4.2.0",
     "enzyme": "3.11.0",
-    "enzyme-adapter-react-16": "1.15.2",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.7",
     "eslint": "7.3.1",
     "eslint-plugin-flowtype": "4.7.0",
     "eslint-plugin-react": "7.20.0",
@@ -53,7 +57,7 @@
     "lint": "eslint --max-warnings 0 --ignore-path .eslintignore .",
     "mocha": "mocha --require test/.setup.js --compilers js:babel-register",
     "test": "yarn lint && yarn mocha",
-    "prepublishOnly": "yarn build"
+    "prepublish": "yarn build"
   },
   "jest": {
     "testEnvironment": "node"
